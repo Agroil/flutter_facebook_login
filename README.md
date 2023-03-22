@@ -178,7 +178,7 @@ However, you can get do this in four lines of Dart code:
 final result = await facebookSignIn.logInWithReadPermissions(['email']);
 final token = result.accessToken.token;
 final graphResponse = await http.get(
-            'https://graph.facebook.com/v2.12/me?fields=name,first_name,last_name,email&access_token=${token}');
+            'https://graph.facebook.com/v16.0/me?fields=name,first_name,last_name,email&access_token=${token}');
 final profile = JSON.decode(graphResponse.body);
 ```
 

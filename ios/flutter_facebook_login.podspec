@@ -15,12 +15,12 @@ A Flutter plugin for allowing users to authenticate with native Android &amp; iO
   s.source_files = 'Classes/**/*'
   s.public_header_files = 'Classes/**/*.h'
   s.dependency 'Flutter'
-  s.dependency 'FBSDKCoreKit', '~> 8.0.0'
-  s.dependency 'FBSDKLoginKit', '~> 8.0.0'
+  s.dependency 'FBSDKCoreKit', '~> 15.1.0'
+  s.dependency 'FBSDKLoginKit', '~> 15.1.0'
 
   # https://github.com/flutter/flutter/issues/14161
   s.static_framework = true
   s.prefix_header_contents = '#define FBSDKCOCOAPODS'
-  
+
   s.ios.deployment_target = '9.0'
 end
